@@ -1,0 +1,71 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.flyer-container {
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Header */
+.flyer-header h1 {
+    color: #2d6a4f;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.flyer-header p {
+    color: #606060;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Event Details */
+.flyer-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-info h2 {
+    font-size: 1.4em;
+    color: #2d6a4f;
+    margin-bottom: 8px;
+}
+
+.event-info p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Footer */
+.flyer-footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #606060;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .flyer-details {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
